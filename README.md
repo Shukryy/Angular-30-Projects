@@ -14,10 +14,10 @@ A collection of 30 small Angular apps built to improve frontend skills and explo
 | 06  | TicTacToe              | 06-tictactoe           | ✅ Done        |
 | 07  |                        | 07-<project-name>      | 🚧 In Progress |
 | 08  | Rock Paper Scissors    | 08-rock-paper-scissors | ✅ Done        |
-| 09  | FAQ Accordion          | 09-faq-accordion       | 🚧 In Progress |
-| 10  | Joke Generator         | 10-joke-generator      | 🚧 In Progress |
-| 11  |                        | 11-<project-name>      | ⏳ Not Started |
-| 12  |                        | 12-<project-name>      | ⏳ Not Started |
+| 09  | FAQ Accordion          | 09-faq-accordion       | ✅ Done        |
+| 10  | Joke Generator         | 10-joke-generator      | ✅ Done        |
+| 11  | Infinite Scroll        | 11-infinite-scroll     | ✅ Done        |
+| 12  | Clock                  | 12-clock               | ✅ Done        |
 | 13  |                        | 13-<project-name>      | ⏳ Not Started |
 | 14  |                        | 14-<project-name>      | ⏳ Not Started |
 | 15  |                        | 15-<project-name>      | ⏳ Not Started |
