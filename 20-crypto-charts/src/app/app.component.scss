@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.chart-wrapper {
+  flex: 1; // takes remaining space
+  margin-right: 20px;
+  max-width: calc(100% - 340px); // allows space for options (300px + margin)
+}
+
+.options-wrapper {
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .chart-wrapper {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .options-wrapper {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

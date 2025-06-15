@@ -1,0 +1,22 @@
+:host {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.chart {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 45px;
+  margin-right: 20%; // 👈 pushes chart away from the right
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
