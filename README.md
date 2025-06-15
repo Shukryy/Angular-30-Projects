@@ -22,10 +22,10 @@ A collection of 30 small Angular apps built to improve frontend skills and explo
 | 14  | Contact Form        | 14-contact-form        | ✅ Done        |
 | 15  | Custom Directives   | 15-custom-directives   | ✅ Done        |
 | 16  | Calculator          | 16-calculator          | ✅ Done        |
-| 17  |                     | 17-<project-name>      | ⏳ Not Started |
-| 18  |                     | 18-<project-name>      | ⏳ Not Started |
-| 19  |                     | 19-<project-name>      | ⏳ Not Started |
-| 20  |                     | 20-<project-name>      | ⏳ Not Started |
+| 17  | Currency Converter  | 17-currency-converter  | ✅ Done        |
+| 18  | Weather             | 18-weather             | ✅ Done        |
+| 19  | Emoji Search        | 19-emoji-search        | ✅ Done        |
+| 20  | Crypto Charts       | 20-crypto-charts       | ✅ Done        |
 | 21  |                     | 21-<project-name>      | ⏳ Not Started |
 | 22  |                     | 22-<project-name>      | ⏳ Not Started |
 | 23  |                     | 23-<project-name>      | ⏳ Not Started |
