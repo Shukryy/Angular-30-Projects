@@ -1,0 +1,39 @@
+<div class="emoji-search">
+  <!-- Search input -->
+  <input
+    type="text"
+    placeholder="Search emojis..."
+    [(ngModel)]="searchTerm"
+    (input)="filterEmojis()"
+  />
+
+  <!-- Category dropdown -->
+  <select [(ngModel)]="selectedCategory" (change)="onCategoryChange()">
+    <option value="">All Groups</option>
+    <option *ngFor="let category of categories" [value]="category">
+      {{ category }}
+    </option>
+  </select>
+
+  <!-- Emoji list display -->
+  <div class="emoji-list">
+    <div
+      class="emoji-item"
+      *ngFor="let emoji of filteredEmojis"
+      (click)="copyToClipboard(emoji.emoji)"
+      role="button"
+      tabindex="0"
+      [attr.aria-label]="'Copy emoji ' + emoji.name"
+      (keydown.enter)="copyToClipboard(emoji.emoji)"
+      (keydown.space)="copyToClipboard(emoji.emoji)"
+    >
+      <span class="emoji-symbol">{{ emoji.emoji }}</span>
+      <span class="emoji-name">{{ emoji.name }}</span>
+    </div>
+  </div>
+
+  <!-- Copy-to-clipboard notification -->
+  <div class="notification" *ngIf="clipboardNotification">
+    {{ clipboardNotification }}
+  </div>
+</div>
