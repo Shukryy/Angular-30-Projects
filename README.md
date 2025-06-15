@@ -12,16 +12,16 @@ A collection of 30 small Angular apps built to improve frontend skills and explo
 | 04  | Stopwatch           | 04-stopwatch           | ✅ Done        |
 | 05  | Guess the Number    | 05-guess-the-number    | ✅ Done        |
 | 06  | TicTacToe           | 06-tictactoe           | ✅ Done        |
-| 07  |                     | 07-<project-name>      | 🚧 In Progress |
+| 07  | <project-name>      | 07-<project-name>      | 🚧 In Progress |
 | 08  | Rock Paper Scissors | 08-rock-paper-scissors | ✅ Done        |
 | 09  | FAQ Accordion       | 09-faq-accordion       | ✅ Done        |
 | 10  | Joke Generator      | 10-joke-generator      | ✅ Done        |
 | 11  | Infinite Scroll     | 11-infinite-scroll     | ✅ Done        |
 | 12  | Clock               | 12-clock               | ✅ Done        |
-| 13  |                     | 13-<project-name>      | ⏳ Not Started |
-| 14  |                     | 14-<project-name>      | ⏳ Not Started |
-| 15  |                     | 15-<project-name>      | ⏳ Not Started |
-| 16  |                     | 16-<project-name>      | ⏳ Not Started |
+| 13  | Feedback Form       | 13-feedback-form       | ✅ Done        |
+| 14  | Contact Form        | 14-contact-form        | ✅ Done        |
+| 15  | Custom Directives   | 15-custom-directives   | ✅ Done        |
+| 16  | Calculator          | 16-calculator          | ✅ Done        |
 | 17  |                     | 17-<project-name>      | ⏳ Not Started |
 | 18  |                     | 18-<project-name>      | ⏳ Not Started |
 | 19  |                     | 19-<project-name>      | ⏳ Not Started |
@@ -36,3 +36,6 @@ A collection of 30 small Angular apps built to improve frontend skills and explo
 | 28  |                     | 28-<project-name>      | ⏳ Not Started |
 | 29  |                     | 29-<project-name>      | ⏳ Not Started |
 | 30  |                     | 30-<project-name>      | ⏳ Not Started |
+
+
+P/S : Learning thru udemy
