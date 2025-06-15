@@ -1,0 +1,79 @@
+<div class="converter-container">
+  <h2>Currency Converter</h2>
+  <p class="subtitle">
+    The most accurate source of data. Powered by
+    <span class="provider">Lucky</span>
+  </p>
+
+  <div class="currency-row">
+    <div class="currency-column">
+      <label for="sourceCurrency">From:</label>
+      <select id="sourceCurrency" [(ngModel)]="sourceCurrency">
+        <option *ngFor="let currency of currencies" [value]="currency">
+          {{ getFlagAndCurrency(currency) }}
+        </option>
+      </select>
+    </div>
+
+    <div class="currency-column">
+      <label for="targetCurrency">To:</label>
+      <select id="targetCurrency" [(ngModel)]="targetCurrency">
+        <option *ngFor="let currency of currencies" [value]="currency">
+          {{ getFlagAndCurrency(currency) }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <div class="amount-row">
+    <div class="amount-column">
+      <label for="amount">Amount:</label>
+      <input
+        type="number"
+        id="amount"
+        [(ngModel)]="amount"
+        placeholder="Enter amount"
+      />
+    </div>
+
+    <div class="converted-column">
+      <label for="convertedAmount">Converted Amount:</label>
+      <input
+        type="text"
+        id="convertedAmount"
+        [value]="result | currency : targetCurrency"
+        readonly
+        placeholder="Converted amount"
+      />
+    </div>
+  </div>
+
+  <button
+    class="convert-button"
+    (click)="convertCurrency()"
+    [disabled]="sourceCurrency === targetCurrency || !amount"
+  >
+    Convert
+  </button>
+
+  <div class="loading" *ngIf="isLoading">🔄 Converting...</div>
+
+  <div class="error" *ngIf="hasError && !isLoading">
+    Failed to fetch conversion rate. Please check your input or try again later.
+  </div>
+
+  <div
+    class="results"
+    *ngIf="conversionRate !== null && !isLoading && !hasError"
+  >
+    <div class="conversion-rate">
+      <h3>Conversion Rate:</h3>
+      <p>{{ conversionRate }}</p>
+    </div>
+
+    <div class="converted-amount">
+      <h3>Converted Amount:</h3>
+      <p>{{ result | currency : targetCurrency }}</p>
+    </div>
+  </div>
+</div>
