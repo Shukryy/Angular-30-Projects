@@ -1,0 +1,11 @@
+<div
+  class="day-card"
+  [class.today]="isToday"
+  [class.past]="isPast"
+  [ngStyle]="{ 'background-image': 'url(' + bgImage + ')' }"
+>
+  <div class="overlay">
+    <div class="day-number">{{ day | date : "dd" }}</div>
+    <div class="day-name">{{ day | date : "EEEE" }}</div>
+  </div>
+</div>

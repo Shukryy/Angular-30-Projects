@@ -1,0 +1,56 @@
+.day-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  transition: transform 0.2s ease;
+  animation: fadeIn 0.25s ease-in forwards;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); // makes text visible
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.day-number {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.day-name {
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.today {
+  border: 2px solid #fff176;
+  box-shadow: 0 0 0 3px rgba(255, 241, 118, 0.5);
+}
+
+.past {
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
