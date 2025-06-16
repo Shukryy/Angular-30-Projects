@@ -1,0 +1,242 @@
+.content-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.user-info {
+  flex: 1;
+  margin-right: 20px;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.user-info h2 {
+  font-size: 24px;
+}
+
+#user-selector {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  min-width: 213px;
+}
+
+.todo-list-container {
+  flex: 3;
+  background-image: linear-gradient(to bottom right, #eaf4ff, #c7e0ff);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list-container h3 {
+  margin-bottom: 4px;
+  font-size: 22px;
+}
+
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.todo-item label {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.todo-actions {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+}
+
+.completed label {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.modal {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-image: linear-gradient(to bottom right, #eaf4ff, #c7e0ff);
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 500px;
+}
+
+.close {
+  color: #2890ff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #176fce;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: rgb(47, 47, 47);
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-body label {
+  font-size: 1em;
+  color: rgb(47, 47, 47);
+}
+
+.modal-body input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  color: rgb(47, 47, 47);
+}
+
+.modal-body input:focus {
+  border-color: #2890ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 144, 255, 0.5);
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.modal-footer button {
+  background-color: #2890ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.modal-footer button:hover {
+  background-color: #176fce;
+  transform: translateY(-2px);
+}
+
+.modal-footer button:active {
+  transform: translateY(1px);
+}
+
+.new-todo-container {
+  display: block;
+  margin-top: 20px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom right, #f0f9ff, #cce6ff);
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 210px;
+}
+
+.new-todo-container h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#new-todo-title {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#new-todo-title:focus {
+  border-color: #2890ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 144, 255, 0.5);
+}
+
+#add-todo-button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #2890ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#add-todo-button:hover {
+  background-color: #176fce;
+  transform: translateY(-2px);
+}
+
+#add-todo-button:active {
+  transform: translateY(1px);
+}
