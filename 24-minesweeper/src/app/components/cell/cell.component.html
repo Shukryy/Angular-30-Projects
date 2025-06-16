@@ -1,0 +1,13 @@
+<div
+  class="cell"
+  [class.revealed]="cell.isRevealed"
+  [class.mine]="cell.isMine"
+  [class.flagged]="cell.isFlagged"
+  (click)="onLeftClick()"
+  (contextmenu)="onRightClick($event)"
+>
+  <ng-container *ngIf="cell.isRevealed">
+    <span *ngIf="cell.isMine">💣</span>
+    <span *ngIf="!cell.isMine">{{ cell.adjacentMines || "" }}</span>
+  </ng-container>
+</div>
